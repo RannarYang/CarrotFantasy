@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CompleteSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15ff8ae31c0" visible="false"/>
+	<e:Image scaleX="1" anchorOffsetX="0" width="993" anchorOffsetY="0" height="662" horizontalCenter="0" verticalCenter="0" source="theend_bg"/>
+	<e:Button id="btnRestart" label="重新开始" x="176" y="185" anchorOffsetX="0" width="272.91" anchorOffsetY="0" height="87.44">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="theend1_btn_normal" source.down="theend1_btn_press"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-8" text="" fontFamily="Microsoft YaHei"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btnClear" label="清档" y="185" anchorOffsetX="0" width="272.91" anchorOffsetY="0" height="87.44" x="515">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="theend1_btn_normal" source.down="theend1_btn_press"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-8" text="" fontFamily="Microsoft YaHei"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

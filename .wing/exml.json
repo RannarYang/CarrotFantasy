@@ -1,0 +1,24 @@
+{
+  "15ff3e14708": {
+    "backgroundType": "user",
+    "backgroundImage": "C:\\Users\\RannarYang\\Desktop\\tower\\tower\\resource\\gameAssets\\page\\level.jpg",
+    "useBgImage": true,
+    "useBgColor": false,
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "backgroundAlpha": 100
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true
+  },
+  "15ff41ae6c5": {
+    "backgroundType": "user",
+    "backgroundImage": "C:\\Users\\RannarYang\\Desktop\\tower\\tower\\resource\\gameAssets\\page\\select.png"
+  },
+  "15ff8ae31c0": {
+    "backgroundType": "user",
+    "backgroundImage": "C:\\Users\\RannarYang\\Desktop\\tower\\tower\\resource\\gameAssets\\page\\complete.jpg"
+  }
+}

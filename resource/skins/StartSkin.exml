@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15ff3e14708" visible="false"/>
+	<e:Image source="mainbg" scaleX="1" anchorOffsetX="0" width="993" anchorOffsetY="0" height="662" horizontalCenter="0" verticalCenter="0"/>
+	<e:Group x="353.12" y="41" locked="true">
+		<e:Image source="leaf-3" x="145.88" y="32" anchorOffsetX="0" width="170" anchorOffsetY="0" height="167.41"/>
+		<e:Image source="leaf-1" x="0" y="190" anchorOffsetX="0" width="148.55" anchorOffsetY="0" height="155.85" rotation="268.01"/>
+		<e:Image source="leaf-2" x="64" y="0" anchorOffsetX="0" width="174" anchorOffsetY="0" height="165" scaleX="1"/>
+		<e:Image source="carrot" x="24" y="109.82" anchorOffsetX="0" width="247.4" anchorOffsetY="0" height="253.43"/>
+	</e:Group>
+	<e:Image source="bird" x="68" y="132"/>
+	<e:Image source="mainbg_CN" x="191" y="205.53" anchorOffsetX="0" width="577.01" anchorOffsetY="0" height="322"/>
+	<e:Button id="btnAdventure" label="Button" x="62" y="531">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_adventure_normal_CN" source.down="btn_adventure_pressed_CN"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btnBoss" label="Button" x="344" y="531">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_boss_normal_CN" source.down="btn_boss_pressed_CN"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btnNest" label="Button" x="624" y="531">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_nest_normal_CN" source.down="btn_nest_pressed_CN"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>
