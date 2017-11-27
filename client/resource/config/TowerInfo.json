@@ -1,0 +1,24 @@
+[
+  {
+    "ID": 0,
+    "Name": "Bottle",
+    "NormalIcon": "Bottle/Bottle01",
+    "DisabledIcon": "Bottle/Bottle00",
+    "MaxLevel": 3,
+    "BasePrice": 1,
+    "ShotRate": 2,
+    "GuardRange": 3,
+    "UseBulletID": 0
+  },
+  {
+    "ID": 1,
+    "Name": "Fan",
+    "NormalIcon": "Fan/Fan01",
+    "DisabledIcon": "Fan/Fan00",
+    "MaxLevel": 3,
+    "BasePrice": 2,
+    "ShotRate": 0.3,
+    "GuardRange": 3,
+    "UseBulletID": 1
+  }
+]

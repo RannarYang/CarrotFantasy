@@ -1,0 +1,14 @@
+[
+  {
+    "ID": 0,
+    "Name": "BallBullet",
+    "BaseSpeed": 5,
+    "BaseAttack": 1
+  },
+  {
+    "ID": 1,
+    "Name": "FanBullet",
+    "BaseSpeed": 2,
+    "BaseAttack": 1
+  }
+]
