@@ -4,10 +4,10 @@ class StartUpCommand extends Controller{
 		// 注册模型
 		this.registModel(new GameModel());
 		this.registModel(new RoundModel());
-		// 注册视图
+		// 注册命令
 		this.registController(Consts.E_EnterScene, EnterSceneCommand);
 		this.registController(Consts.E_ExitScene, ExitSceneCommand);
-
+		this.registController(Consts.E_StartLevel, StartLevelCommand);
 		// 初始化
 		let gModel: GameModel = this.GetModel(GameModel);
 		gModel.initialize();

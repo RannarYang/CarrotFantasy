@@ -7,7 +7,6 @@ class Consts {
 	public static E_StartUp: string = "E_StartUp"; // 启动游戏
 	public static E_EnterScene: string = "E_EnterScene"; // 进入场景
 	public static E_ExitScene: string = "E_ExitScene"; // 退出场景
-
-	// level 路径
-	public static LEVEL_PATH: string = 'C:\Users\RannarYang\Desktop\works\CarrotFantasy\client\resource\config\levels';
+	public static E_StartLevel: string = "E_StartLevel"; // 开始游戏
+	public static E_CountDownComplete: string = "E_CountDownComplete"; // 倒计时结束
 }

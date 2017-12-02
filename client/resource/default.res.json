@@ -1,6 +1,6 @@
 {
 	"groups":[{
-			"keys":"BulletInfo,description,LuoboInfo,MonsterInfo,TowerInfo,level1,level2,level3,level4,level0",
+			"keys":"BulletInfo,description,LuoboInfo,MonsterInfo,TowerInfo,level1,level2,level3,level4,level0,countdown_01,countdown_02,countdown_03,countdown_11,countdown_12,countdown_13",
 			"name":"preload"
 		}],
 	"resources":[
@@ -548,36 +548,6 @@
 			"name":"BossHP10",
 			"type":"image",
 			"url":"gameAssets/Scene/Items02-hd.pvr/BossHP10.png"
-		},
-		{
-			"name":"countdown_01",
-			"type":"image",
-			"url":"gameAssets/Scene/Items02-hd.pvr/countdown_01.png"
-		},
-		{
-			"name":"countdown_02",
-			"type":"image",
-			"url":"gameAssets/Scene/Items02-hd.pvr/countdown_02.png"
-		},
-		{
-			"name":"countdown_03",
-			"type":"image",
-			"url":"gameAssets/Scene/Items02-hd.pvr/countdown_03.png"
-		},
-		{
-			"name":"countdown_11",
-			"type":"image",
-			"url":"gameAssets/Scene/Items02-hd.pvr/countdown_11.png"
-		},
-		{
-			"name":"countdown_12",
-			"type":"image",
-			"url":"gameAssets/Scene/Items02-hd.pvr/countdown_12.png"
-		},
-		{
-			"name":"countdown_13",
-			"type":"image",
-			"url":"gameAssets/Scene/Items02-hd.pvr/countdown_13.png"
 		},
 		{
 			"name":"finalwave",
@@ -1763,6 +1733,36 @@
 			"name":"TowerInfo",
 			"type":"json",
 			"url":"config/TowerInfo.json"
+		},
+		{
+			"name":"countdown_01",
+			"type":"image",
+			"url":"gameAssets/Scene/Items02-hd.pvr/countdown_01.png"
+		},
+		{
+			"name":"countdown_02",
+			"type":"image",
+			"url":"gameAssets/Scene/Items02-hd.pvr/countdown_02.png"
+		},
+		{
+			"name":"countdown_03",
+			"type":"image",
+			"url":"gameAssets/Scene/Items02-hd.pvr/countdown_03.png"
+		},
+		{
+			"name":"countdown_11",
+			"type":"image",
+			"url":"gameAssets/Scene/Items02-hd.pvr/countdown_11.png"
+		},
+		{
+			"name":"countdown_12",
+			"type":"image",
+			"url":"gameAssets/Scene/Items02-hd.pvr/countdown_12.png"
+		},
+		{
+			"name":"countdown_13",
+			"type":"image",
+			"url":"gameAssets/Scene/Items02-hd.pvr/countdown_13.png"
 		}
 	]
 }

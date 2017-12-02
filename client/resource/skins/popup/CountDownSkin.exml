@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CountDownSkin" width="402" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="circleTween">
+			<tween:TweenItem target="{image}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object rotation="{-360}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="160178830ee"/>
+	<e:Image source="countdown_11" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="image" source="countdown_12" x="202" y="148" anchorOffsetX="97" anchorOffsetY="78" rotation="0"/>
+	<e:Image id="cdNumImg" source="countdown_01" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

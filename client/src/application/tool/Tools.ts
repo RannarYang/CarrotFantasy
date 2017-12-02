@@ -1,6 +1,6 @@
 class Tools {
 	/**
-	 * 解析xml文件
+	 * 解析xml文件,以后弄个通用解析类
 	 */
 	public static getLevel(levelNum: number): Level {
 		let level = new Level();

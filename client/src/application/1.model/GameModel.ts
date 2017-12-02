@@ -16,6 +16,17 @@ class GameModel extends Model{
 		return this.mLevels;
 	}
 	public get gameProgress(): number{
-		return 2;
+		return 3;
+	}
+
+	private mPlayLevelIndex: number = -1;
+	public startLevel(lv: number) {
+		this.mPlayLevelIndex = lv;
+	}
+	public getPlayLevel(): Level {
+		if(this.mPlayLevelIndex < 0 || this.mPlayLevelIndex > this.levelCount - 1) {
+			throw new Error("关卡不存在");
+		}
+		return this.mLevels[this.mPlayLevelIndex];
 	}
 }

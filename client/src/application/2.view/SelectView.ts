@@ -77,7 +77,9 @@ class SelectView extends View {
 		Game.getInstance().loadScene(StartScene)
 	}
 	private onStart() {
-		Game.getInstance().loadScene(LevelScene);
+		let e: StartLevelArgs = new StartLevelArgs();
+		e.levelIndex = this.curSelectedIndex;
+		this.sendEvent(Consts.E_StartLevel, e);
 	}
 	public dispose() {
 		this.btnReturn.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onReturn, this);
