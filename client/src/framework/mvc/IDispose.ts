@@ -1,3 +1,3 @@
 interface IDispose {
-	dispose();
+	onDispose();
 }

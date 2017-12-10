@@ -9,14 +9,14 @@ class ObjectPool {
 		}
 		return this._instance;
 	}
-	private _pools: { [key: string]: SubPool<any>; } ;
+	private _pools: { [key: string]: SubPool<any>; } = {};
 	public constructor() {
 	}
-	public spawn<T extends ResuableObject>(t: {new(): T}){
-		if(!this._pools[t.prototype.constructor]) {
+	public spawn<T extends IReusable>(t: {new(): T}){
+		if(!this._pools[Utils.CommonUtil.getClassName(t)]) {
 			this.registNew<T>(t);
 		}
-		let pool : SubPool<T> = this._pools[t.prototype.constructor];
+		let pool : SubPool<T> = this._pools[Utils.CommonUtil.getClassName(t)];
 		return pool.spawn();
 	}
 	public unSpawn(obj) {
@@ -36,6 +36,6 @@ class ObjectPool {
 	}
 	private registNew<T extends IReusable>(t: {new(): T}) {
 		let pool: SubPool<T> = new SubPool<T>(t);
-		this._pools[t.prototype.constructor] = pool;
+		this._pools[Utils.CommonUtil.getClassName(t)] = pool;
 	}
 }

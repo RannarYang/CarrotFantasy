@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LuoboSkin" width="75" height="106" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+	</w:Declarations>
+	<e:Image id="image" source="hlb21" x="0" y="0"/>
+</e:Skin>

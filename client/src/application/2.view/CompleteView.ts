@@ -1,5 +1,4 @@
 class CompleteView extends View {
-	public name = "CompleteView";
 
 	private btnRestart: eui.Button;
 	private btnClear: eui.Button;
@@ -22,7 +21,7 @@ class CompleteView extends View {
 	private onClear() {
 		console.log('clear......');
 	}
-	public dispose() {
+	public onDispose() {
 		this.btnRestart.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onRestart, this);
 		this.btnClear.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onClear, this);
 	}

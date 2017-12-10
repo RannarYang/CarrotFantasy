@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EditorSkin" width="960" height="640" currentState="attrState" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="mapState,attrState" >
+    <e:Image id="bgImg" x="960" rotation="90" x.attrState="961.52" source="bg1"/>
+	<e:Image id="roadImg" x="0" anchorOffsetX="0" anchorOffsetY="0" y="162" touchEnabled="false" source="road5" visible.attrState="false"/>
+	<e:Group id="col" width="960" height="640" x="0" y="0" includeIn="mapState" touchEnabled="false" touchChildren="false">
+		<e:Rect width="1" height="640" x="-673" y="-183" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="1" height="640" x="-663" y="-173" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="1" height="640" x="-653" y="-163" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="1" height="640" x="-643" y="-153" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="1" height="640" x="-633" y="-143" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="1" height="640" x="-623" y="-133" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="1" height="640" x="-613" y="-123" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="1" height="640" x="-603" y="-113" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="1" height="640" x="-593" y="-103" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="1" height="640" x="-583" y="-93" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="1" height="640" x="-573" y="-83" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="1" height="640" x="-563" y="-73" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="1" height="640" x="-553" y="-63" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:layout>
+		<e:HorizontalLayout gap="79"/>
+		</e:layout>
+	</e:Group>
+	<e:Group width="960" height="640" x="0" y="0" includeIn="mapState" touchChildren="false" touchEnabled="false">
+		<e:Rect width="960" height="1" x="-673" y="-183" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="960" height="1" x="-663" y="-173" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="960" height="1" x="-653" y="-163" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="960" height="1" x="-643" y="-153" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="960" height="1" x="-633" y="-143" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="960" height="1" x="-623" y="-133" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="960" height="1" x="-613" y="-123" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="960" height="1" x="-603" y="-113" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="960" height="1" x="-593" y="-103" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="960" height="1" x="-583" y="-93" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="960" height="1" x="-573" y="-83" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="960" height="1" x="-563" y="-73" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:Rect width="960" height="1" x="-553" y="-63" fillColor="0x000000" strokeColor="0x000000" scaleX="1" scaleY="1"/>
+		<e:layout>
+		<e:VerticalLayout gap="79"/>
+		</e:layout>
+	</e:Group>
+	<e:Image source="MenuBG" y="0" anchorOffsetX="0" width="908.67" horizontalCenter="0"/>
+	<e:Label id="btnSetAttr" text="set attr" y="13.6" fontFamily="Microsoft YaHei" x="791.95" includeIn="mapState"/>
+	<e:Group id="holderGroup" width="960" height="640" x="0" y="0" touchEnabled.mapState="false" touchChildren.mapState="false" includeIn="mapState"/>
+	<e:Group id="pathGroup" width="960" height="640" x="0" y="0" touchEnabled="false" touchChildren="false" includeIn="mapState">
+		<e:Image id="luobo" source="hlb21" x="820.34" y="165.32" scaleX="1" scaleY="1" anchorOffsetX="0" width="50" anchorOffsetY="0" height="70"/>
+		<e:Label text="path" x="536.13" y="18.04"/>
+		<e:Label text="holder" x="365.78" y="17.4"/>
+	</e:Group>
+	<e:ToggleSwitch id="holderPathSwitch" label="ToggleButton" includeIn="mapState" x="461.13" y="19.56"/>
+	<e:Group includeIn="attrState" x="-2" y="6">
+		<e:Image id="cardImg" x="3.04" y="304.48" source="card0"/>
+		<e:Button id="btnLoad" label="加载关卡" y="438.77" anchorOffsetX="0" width="272.91" anchorOffsetY="0" height="87.44" x="621.44">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="theend1_btn_normal" source.down="theend1_btn_press"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-8" text="" fontFamily="Microsoft YaHei"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnSave" label="保存" y="538.77" anchorOffsetX="0" width="272.91" anchorOffsetY="0" height="87.44" x="621.44">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="theend1_btn_normal" source.down="theend1_btn_press"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-8" text="" fontFamily="Microsoft YaHei"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label text="关卡名称：" x="301" y="11.12" fontFamily="Microsoft YaHei" size="32"/>
+		<e:Label text="初始分数：" x="41" y="80.11" fontFamily="Microsoft YaHei" size="32"/>
+		<e:EditableText id="levelText" text="Chapter One" x="461" y="11.12" anchorOffsetX="0" anchorOffsetY="0" size="32" fontFamily="Microsoft YaHei" width="231"/>
+		<e:EditableText id="scoreText" text="10" x="201" y="83.15" anchorOffsetX="0" anchorOffsetY="0" size="32" fontFamily="Microsoft YaHei"/>
+		<e:Label text="关卡数：" x="644.17" y="390.88" fontFamily="Microsoft YaHei" size="32"/>
+		<e:EditableText id="levelNum" text="0" x="785.99" y="393.92" anchorOffsetX="0" anchorOffsetY="0" size="32" fontFamily="Microsoft YaHei"/>
+		<e:Label text="卡片：" x="37.13" y="251.58" fontFamily="Microsoft YaHei" size="32"/>
+		<e:EditableText id="cardImgText" text="card0" x="137" y="253.58" anchorOffsetX="0" anchorOffsetY="0" size="32" fontFamily="Microsoft YaHei"/>
+		<e:Label text="背景：" x="41" y="137" fontFamily="Microsoft YaHei" size="32"/>
+		<e:EditableText id="bgImgText" text="bg0" x="137" y="140" anchorOffsetX="0" anchorOffsetY="0" size="32" fontFamily="Microsoft YaHei"/>
+		<e:Label text="路径：" x="41" y="194" fontFamily="Microsoft YaHei" size="32"/>
+		<e:EditableText id="roadImgText" text="road0" x="133.13" y="197" anchorOffsetX="0" anchorOffsetY="0" size="32" fontFamily="Microsoft YaHei"/>
+		<e:Image width="20" height="20" x="605" y="109"/>
+		<e:Group x="493.35" y="76.66">
+			<e:Group>
+				<e:Label text="Round：" includeIn="attrState" x="0" y="7" fontFamily="Microsoft YaHei" size="32"/>
+				<e:Label id="btnAdd" text="+" x="428.85" y="0" size="45" textColor="0x2eff00"/>
+			</e:Group>
+			<e:List id="roundList" includeIn="attrState" x="9" y="9" anchorOffsetX="0" scaleX="1" scaleY="1">
+			<e:itemRendererSkinName>
+				<e:Skin minHeight="50" minWidth="100" width="456" height="40">
+				<e:Label text="MonsterId:" x="0" y="8" size="32" fontFamily="Microsoft YaHei"/>
+				<e:Label text="Count:" x="245" y="8" size="32" fontFamily="Microsoft YaHei"/>
+				<e:EditableText id="monsterIdText" name="monsterIdText" x="183" y="9"/>
+				<e:EditableText id="countText" name="countText" x="357" y="9"/>
+				<e:Label id="btnDelete" text="-" x="403.13" y="-1.04" size="45" textColor="0xff0000" name="btnDelete"/>
+				<e:Label id="btnAdd" text="+" x="428.85" y="2" size="45" name="btnAdd" textColor="0x2eff00"/>
+				</e:Skin>
+			</e:itemRendererSkinName>
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object a="null"/>
+						<e:Object a="null"/>
+					</e:Array>
+				</e:ArrayCollection>
+			</e:List>
+			<e:layout>
+			<e:VerticalLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="btnSetMap" text="set map" y="7.6" fontFamily="Microsoft YaHei" x="780.95"/>
+	</e:Group>
+	<e:Button id="btnReturn" label="Button" x="112.13" y="17.12">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ss_back_normal" source.down="ss_back_pressed" x="18.6" y="16" anchorOffsetX.disabled="18.6" anchorOffsetX.up="18.6" anchorOffsetY="16" x.down="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

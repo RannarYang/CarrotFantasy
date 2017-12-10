@@ -34,7 +34,7 @@ class SubPool<T extends ResuableObject> {
 	 * 回收所有对象
 	 */
 	public unSpawnAll() {
-		let onUseIndexArr = ArrayUtils.getDeletionNums(this._canUseIndexStack, 0, this._objects.length-1);
+		let onUseIndexArr = Utils.ArrayUtil.getDeletionNums(this._canUseIndexStack, 0, this._objects.length-1);
 		for(let i = 0, len = onUseIndexArr.length; i < len; i++) {
 			let onUseIndex = onUseIndexArr[i];
 			this._objects[onUseIndex].onUnSpawn();

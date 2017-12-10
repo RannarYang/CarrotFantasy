@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="LevelSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+<e:Skin class="LevelSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
 	<w:Config id="15ff3e14708" visible="false"/>
-	<e:Image id="bgImg" source="bg1" x="960" rotation="90"/>
-	<e:Image id="roadImg" source="road1" x="0" bottom="0"/>
+	<ns1:RoleView width="960" height="640" x="0" y="0" skinName="RoleSkin"/>
 	<e:Group x="26" y="1.3299999999999983">
 		<e:Image source="MenuBG" y="0" anchorOffsetX="0" width="908.67" x="0"/>
 		<e:Label id="scoreLabel" text="999" x="82.33" fontFamily="Microsoft YaHei" verticalCenter="-7"/>

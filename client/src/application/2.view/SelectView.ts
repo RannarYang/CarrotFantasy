@@ -1,5 +1,4 @@
 class SelectView extends View {
-	public name = "SelectView";
 
 	private cards: Card[] = [];
 	private cardUIGroup: eui.Group;
@@ -81,7 +80,7 @@ class SelectView extends View {
 		e.levelIndex = this.curSelectedIndex;
 		this.sendEvent(Consts.E_StartLevel, e);
 	}
-	public dispose() {
+	public onDispose() {
 		this.btnReturn.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onReturn, this);
 		this.btnStart.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onStart, this);
 	}

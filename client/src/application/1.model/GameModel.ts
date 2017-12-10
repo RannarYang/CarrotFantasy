@@ -1,5 +1,4 @@
 class GameModel extends Model{
-	public name = "GameModel";
 	private levelCount = 5;
 	private mLevels : Level[] = [];
 
@@ -7,7 +6,7 @@ class GameModel extends Model{
 		// Level
 		let levels: Level[] = [];
 		for(let i = 0; i < this.levelCount; i++) {
-			let level = Tools.getLevel(i);
+			let level = Tools.LevelTool.getLevelFromJSON(i);
 			levels.push(level);
 		}
 		this.mLevels = levels;

@@ -1,6 +1,6 @@
 {
 	"groups":[{
-			"keys":"BulletInfo,description,LuoboInfo,MonsterInfo,TowerInfo,level1,level2,level3,level4,level0,countdown_01,countdown_02,countdown_03,countdown_11,countdown_12,countdown_13",
+			"keys":"BulletInfo,description,LuoboInfo,MonsterInfo,TowerInfo,countdown_01,countdown_02,countdown_03,countdown_11,countdown_12,countdown_13,holder,level4,level3,level2,level1,level0",
 			"name":"preload"
 		}],
 	"resources":[
@@ -1685,31 +1685,6 @@
 			"url":"gameAssets/Monsters/land_star02.png"
 		},
 		{
-			"name":"level0",
-			"type":"bin",
-			"url":"config/levels/level0.xml"
-		},
-		{
-			"name":"level1",
-			"type":"bin",
-			"url":"config/levels/level1.xml"
-		},
-		{
-			"name":"level2",
-			"type":"bin",
-			"url":"config/levels/level2.xml"
-		},
-		{
-			"name":"level3",
-			"type":"bin",
-			"url":"config/levels/level3.xml"
-		},
-		{
-			"name":"level4",
-			"type":"bin",
-			"url":"config/levels/level4.xml"
-		},
-		{
 			"name":"BulletInfo",
 			"type":"json",
 			"url":"config/BulletInfo.json"
@@ -1763,6 +1738,166 @@
 			"name":"countdown_13",
 			"type":"image",
 			"url":"gameAssets/Scene/Items02-hd.pvr/countdown_13.png"
+		},
+		{
+			"name":"messageBg",
+			"type":"image",
+			"url":"gameAssets/common/messageBg.png"
+		},
+		{
+			"name":"noticeBG",
+			"type":"image",
+			"url":"gameAssets/common/noticeBG.png"
+		},
+		{
+			"name":"bg",
+			"type":"image",
+			"url":"assets/bg.jpg"
+		},
+		{
+			"name":"button_down",
+			"type":"image",
+			"url":"assets/Button/button_down.png"
+		},
+		{
+			"name":"button_up",
+			"type":"image",
+			"url":"assets/Button/button_up.png"
+		},
+		{
+			"name":"checkbox_select_disabled",
+			"type":"image",
+			"url":"assets/CheckBox/checkbox_select_disabled.png"
+		},
+		{
+			"name":"checkbox_select_down",
+			"type":"image",
+			"url":"assets/CheckBox/checkbox_select_down.png"
+		},
+		{
+			"name":"checkbox_select_up",
+			"type":"image",
+			"url":"assets/CheckBox/checkbox_select_up.png"
+		},
+		{
+			"name":"checkbox_unselect",
+			"type":"image",
+			"url":"assets/CheckBox/checkbox_unselect.png"
+		},
+		{
+			"name":"egret_icon",
+			"type":"image",
+			"url":"assets/egret_icon.png"
+		},
+		{
+			"name":"selected",
+			"type":"image",
+			"url":"assets/ItemRenderer/selected.png"
+		},
+		{
+			"name":"border",
+			"type":"image",
+			"url":"assets/Panel/border.png"
+		},
+		{
+			"name":"header",
+			"type":"image",
+			"url":"assets/Panel/header.png"
+		},
+		{
+			"name":"thumb_pb",
+			"type":"image",
+			"url":"assets/ProgressBar/thumb_pb.png"
+		},
+		{
+			"name":"track_pb",
+			"type":"image",
+			"url":"assets/ProgressBar/track_pb.png"
+		},
+		{
+			"name":"radiobutton_select_disabled",
+			"type":"image",
+			"url":"assets/RadioButton/radiobutton_select_disabled.png"
+		},
+		{
+			"name":"radiobutton_select_down",
+			"type":"image",
+			"url":"assets/RadioButton/radiobutton_select_down.png"
+		},
+		{
+			"name":"radiobutton_select_up",
+			"type":"image",
+			"url":"assets/RadioButton/radiobutton_select_up.png"
+		},
+		{
+			"name":"radiobutton_unselect",
+			"type":"image",
+			"url":"assets/RadioButton/radiobutton_unselect.png"
+		},
+		{
+			"name":"roundthumb",
+			"type":"image",
+			"url":"assets/ScrollBar/roundthumb.png"
+		},
+		{
+			"name":"track_sb",
+			"type":"image",
+			"url":"assets/ScrollBar/track_sb.png"
+		},
+		{
+			"name":"thumb",
+			"type":"image",
+			"url":"assets/Slider/thumb.png"
+		},
+		{
+			"name":"track",
+			"type":"image",
+			"url":"assets/Slider/track.png"
+		},
+		{
+			"name":"tracklight",
+			"type":"image",
+			"url":"assets/Slider/tracklight.png"
+		},
+		{
+			"name":"handle",
+			"type":"image",
+			"url":"assets/ToggleSwitch/handle.png"
+		},
+		{
+			"name":"off",
+			"type":"image",
+			"url":"assets/ToggleSwitch/off.png"
+		},
+		{
+			"name":"on",
+			"type":"image",
+			"url":"assets/ToggleSwitch/on.png"
+		},
+		{
+			"name":"level4",
+			"type":"bin",
+			"url":"config/levels/level4.text"
+		},
+		{
+			"name":"level3",
+			"type":"bin",
+			"url":"config/levels/level3.text"
+		},
+		{
+			"name":"level2",
+			"type":"bin",
+			"url":"config/levels/level2.text"
+		},
+		{
+			"name":"level1",
+			"type":"bin",
+			"url":"config/levels/level1.text"
+		},
+		{
+			"name":"level0",
+			"type":"bin",
+			"url":"config/levels/level0.text"
 		}
 	]
 }

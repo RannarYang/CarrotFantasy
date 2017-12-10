@@ -6,14 +6,21 @@ class MVC {
 
 	// register =======================================
 	public static registView(view: View) {
-		if(this.views[view.name]) return;
-		this.views[view.name] = view;
-
+		let viewName = Utils.CommonUtil.getClassNameByObj(view);
+		if(this.views[viewName]) return;
+		this.views[viewName] = view;
 		view.registEvent();
 	}
+	public static unRegistView(view: View) {
+		let viewName = Utils.CommonUtil.getClassNameByObj(view);
+		if(this.views[viewName]) {
+			delete this.views[viewName];
+		}
+	}
 	public static registModel(model: Model) {
-		if(this.models[model.name]) return;
-		this.models[model.name] = model;
+		let modelName = Utils.CommonUtil.getClassNameByObj(model);
+		if(this.models[modelName]) return;
+		this.models[modelName] = model;
 	}
 	public static registController<T extends Controller>(eventName: string, type: { new(): T }) {
 		this.commandMaps[eventName] = type;

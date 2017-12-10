@@ -1,5 +1,4 @@
 class CountDownView extends View{
-	public name = "CountDownView";
 	private aniImgSrc = ["countdown_01","countdown_02","countdown_03","countdown_13"]
 	private circleTween: egret.tween.TweenGroup;
 	private cdNumImg: eui.Image;
@@ -13,7 +12,7 @@ class CountDownView extends View{
 	private async countDown() {
 		for(let i = 0, len = this.aniImgSrc.length - 1; i < len; i++) {
 			this.cdNumImg.source = this.aniImgSrc[i];
-			await Utils.timeout(1000);
+			await Utils.TimeUtil.wait(1000);
 		}
 		this.cdNumImg.source = this.aniImgSrc[this.aniImgSrc.length - 1];
 		let imgW = this.cdNumImg.width;
@@ -43,6 +42,6 @@ class CountDownView extends View{
 		this.playAnim();
 
 	}
-	public dispose() {
+	public onDispose() {
 	}
 }

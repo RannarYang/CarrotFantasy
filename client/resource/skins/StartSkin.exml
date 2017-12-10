@@ -24,10 +24,18 @@
 			</e:Skin>
 		</e:skinName>
 	</e:Button>
-	<e:Button id="btnNest" label="Button" x="624" y="531">
+	<e:Button id="btnNest" label="Button" x="624" y="531" locked="true" visible="false">
 		<e:skinName>
 			<e:Skin states="up,down,disabled">
 			<e:Image width="100%" height="100%" source="btn_nest_normal_CN" source.down="btn_nest_pressed_CN"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btnEditor" label="编辑关卡" x="624" y="531" anchorOffsetX="0" width="272.91" anchorOffsetY="0" height="87.44">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="theend1_btn_normal" source.down="theend1_btn_press"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-8" text="" fontFamily="Microsoft YaHei"/>
 			</e:Skin>
 		</e:skinName>
 	</e:Button>

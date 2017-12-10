@@ -15,9 +15,10 @@ class Game extends ApplicationBase {
 	private fixContainer: eui.Component;
 	// 全局访问的功能(全局单例)
 	public objectPool : ObjectPool = null;
-	public sound: Sound = null;
+	public soundManager: SoundManager = null;
 	public staticData: StaticData = null;
 	public popUpManager : PopUpManager = null;
+	public noticeManager: NoticeManager = null;
 	/**
 	 *  场景控制
 	 */
@@ -46,16 +47,21 @@ class Game extends ApplicationBase {
 
 		let popUpContainer: eui.Component = new eui.Component();
 		this.stage.addChild(popUpContainer);
+
+		let noticeManager: NoticeManager = new NoticeManager();
+		this.stage.addChild(noticeManager);
 		// 初始化
 		this.objectPool = ObjectPool.getInstance();
-		this.sound = Sound.getInstance();
+		this.soundManager = SoundManager.getInstance();
 		this.staticData = StaticData.getInstance();
 		this.popUpManager = PopUpManager.getInstance();
 		this.popUpManager.start(popUpContainer, this.stage.stageWidth, this.stage.stageHeight);
+		this.noticeManager = noticeManager;
 
 		// 注册启动命令
 		this.registController(Consts.E_StartUp, StartUpCommand);
 		// 启动游戏
 		this.sendEvent(Consts.E_StartUp);
+
 	}
 }

@@ -1,5 +1,4 @@
 class RoundModel extends Model{
-	public name = "RoundModel";
 	private mRounds: Round[] = [];
 	public constructor() {
 		super();

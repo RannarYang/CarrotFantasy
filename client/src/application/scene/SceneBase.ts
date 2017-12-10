@@ -19,8 +19,9 @@ class SceneBase extends eui.UILayer implements IState{
 		let e: SceneArgs = new SceneArgs();
 		e.sceneClass = SceneBase;
 		MVC.sendEvent(Consts.E_ExitScene, e);
-
+		
 		// 删除自身
+		this.removeChildren();
 		this.parent.removeChild(this);
 	}
     public stateUpdate() {}

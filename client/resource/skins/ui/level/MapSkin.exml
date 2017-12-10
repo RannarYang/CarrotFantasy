@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MapSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui">
+    <e:Image id="bgImg" source="bg1" x="960" rotation="90"/>
+	<e:Image id="roadImg" source="road1" x="0" bottom="0"/>
+</e:Skin>

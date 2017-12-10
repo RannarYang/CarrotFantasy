@@ -1,5 +1,4 @@
 class MenuView extends View {
-	public name = "MenuView";
 	private btnSelect: eui.Button;
 	private btnRestart: eui.Button;
 	private btnContinue: eui.Button;
@@ -32,7 +31,7 @@ class MenuView extends View {
 	private close() {
 		Game.getInstance().popUpManager.removePopUp(MenuView);
 	}
-	public dispose() {
+	public onDispose() {
 		this.btnSelect.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onSelect, this);
 		this.btnRestart.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onRestart, this);
 		this.btnContinue.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onContinue, this);
