@@ -60,6 +60,7 @@ class Game extends ApplicationBase {
 
 		// 注册启动命令
 		this.registController(Consts.E_StartUp, StartUpCommand);
+		
 		// 启动游戏
 		this.sendEvent(Consts.E_StartUp);
 

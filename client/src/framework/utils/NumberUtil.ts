@@ -68,6 +68,17 @@ module Utils {
 			
 			return value;
 		}
-		
+		/**
+		 * 将0,1...10 => '01','02'....'10' 
+		 */
+		public static fixNumberByAddZeroAtPrefix(num: number, strLen: number) {
+			let addZeroLen = strLen - (num + '').length;
+			let res = '';
+			for(let i = 0; i < addZeroLen; i++) {
+				res += '0';
+			}
+			res += num;
+			return res;
+		}
 	}
 }

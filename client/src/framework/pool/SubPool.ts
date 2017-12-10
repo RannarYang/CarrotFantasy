@@ -8,7 +8,7 @@ class SubPool<T extends ResuableObject> {
 	/**
 	 * 取对象
 	 */
-	public spawn():T {
+	public spawn(data?:any):T {
 		let retObj: T;
 		if (this._canUseIndexStack.length) {
 			let index = this._canUseIndexStack.pop();
@@ -17,7 +17,7 @@ class SubPool<T extends ResuableObject> {
 			retObj = new this._type();
 			this._objects.push(retObj);
 		}
-		retObj.onSpawn();
+		retObj.onSpawn(data);
 		return retObj;
 	}
 	/**

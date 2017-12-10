@@ -8,6 +8,7 @@ class StartUpCommand extends Controller{
 		this.registController(Consts.E_EnterScene, EnterSceneCommand);
 		this.registController(Consts.E_ExitScene, ExitSceneCommand);
 		this.registController(Consts.E_StartLevel, StartLevelCommand);
+		this.registController(Consts.E_CountDownComplete, CountDownCompleteCommand);
 		// 初始化
 		let gModel: GameModel = this.GetModel(GameModel);
 		gModel.initialize();

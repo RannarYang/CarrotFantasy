@@ -1,0 +1,28 @@
+{"mc":{
+	"monster03":{
+		"frameRate":3,
+		"labels":[
+			{"name":"monster03","frame":1,"end":2}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"fly_blue01",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"fly_blue02",
+			"x":0,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"fly_blue01":{"x":0,"y":0,"w":56,"h":73},
+		"fly_blue02":{"x":0,"y":75,"w":65,"h":50}
+	}}

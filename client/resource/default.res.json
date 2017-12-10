@@ -1,6 +1,6 @@
 {
 	"groups":[{
-			"keys":"BulletInfo,description,LuoboInfo,MonsterInfo,TowerInfo,countdown_01,countdown_02,countdown_03,countdown_11,countdown_12,countdown_13,holder,level4,level3,level2,level1,level0",
+			"keys":"BulletInfo,description,LuoboInfo,MonsterInfo,TowerInfo,countdown_01,countdown_02,countdown_03,countdown_11,countdown_12,countdown_13,holder,level4,level3,level2,level1,level0,monster01_json,monster01_png,monster02_json,monster02_png,monster03_json,monster03_png,monster04_json,monster04_png,monster05_json,monster05_png,monster06_json,monster06_png,BossHP01,BossHP02,BossHP03,BossHP04,BossHP05,BossHP06,BossHP07,BossHP08,BossHP09,BossHP10",
 			"name":"preload"
 		}],
 	"resources":[
@@ -1898,6 +1898,66 @@
 			"name":"level0",
 			"type":"bin",
 			"url":"config/levels/level0.text"
+		},
+		{
+			"name":"monster01_json",
+			"type":"json",
+			"url":"effect/monster01.json"
+		},
+		{
+			"name":"monster01_png",
+			"type":"image",
+			"url":"effect/monster01.png"
+		},
+		{
+			"name":"monster02_json",
+			"type":"json",
+			"url":"effect/monster02.json"
+		},
+		{
+			"name":"monster02_png",
+			"type":"image",
+			"url":"effect/monster02.png"
+		},
+		{
+			"name":"monster03_json",
+			"type":"json",
+			"url":"effect/monster03.json"
+		},
+		{
+			"name":"monster03_png",
+			"type":"image",
+			"url":"effect/monster03.png"
+		},
+		{
+			"name":"monster04_json",
+			"type":"json",
+			"url":"effect/monster04.json"
+		},
+		{
+			"name":"monster04_png",
+			"type":"image",
+			"url":"effect/monster04.png"
+		},
+		{
+			"name":"monster05_json",
+			"type":"json",
+			"url":"effect/monster05.json"
+		},
+		{
+			"name":"monster05_png",
+			"type":"image",
+			"url":"effect/monster05.png"
+		},
+		{
+			"name":"monster06_json",
+			"type":"json",
+			"url":"effect/monster06.json"
+		},
+		{
+			"name":"monster06_png",
+			"type":"image",
+			"url":"effect/monster06.png"
 		}
 	]
 }

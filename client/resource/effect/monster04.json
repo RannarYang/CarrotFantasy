@@ -1,0 +1,28 @@
+{"mc":{
+	"monster04":{
+		"frameRate":3,
+		"labels":[
+			{"name":"monster04","frame":1,"end":2}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"land_star01",
+			"x":1,
+			"y":1
+			},
+			{
+			"res":"land_star02",
+			"x":1,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"land_star01":{"x":0,"y":0,"w":63,"h":71},
+		"land_star02":{"x":65,"y":0,"w":47,"h":54}
+	}}

@@ -1,0 +1,28 @@
+{"mc":{
+	"monster06":{
+		"frameRate":3,
+		"labels":[
+			{"name":"monster06","frame":1,"end":2}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"boss_big01",
+			"x":1,
+			"y":0
+			},
+			{
+			"res":"boss_big02",
+			"x":1,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"boss_big02":{"x":183,"y":0,"w":149,"h":135},
+		"boss_big01":{"x":0,"y":0,"w":181,"h":147}
+	}}

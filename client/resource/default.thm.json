@@ -30,10 +30,16 @@
     "resource/eui_skins/VScrollBarSkin.exml",
     "resource/eui_skins/VSliderSkin.exml",
     "resource/skins/CompleteSkin.exml",
+    "resource/skins/EditorSkin.exml",
+    "resource/skins/ui/level/RoleSkin.exml",
     "resource/skins/LevelSkin.exml",
+    "resource/skins/ui/select/CardUISkin.exml",
     "resource/skins/SelectSkin.exml",
     "resource/skins/StartSkin.exml",
     "resource/skins/components/ButtonSkin.exml",
-    "resource/skins/popup/MenuSkin.exml"
+    "resource/skins/popup/CountDownSkin.exml",
+    "resource/skins/popup/MenuSkin.exml",
+    "resource/skins/ui/level/LuoboSkin.exml",
+    "resource/skins/ui/level/MapSkin.exml"
   ]
 }

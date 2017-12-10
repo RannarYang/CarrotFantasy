@@ -22,9 +22,14 @@ class RoleView extends View{
 		this.spawnLuobo();
 	}
 	public registEvent() : void{
+		this.attentionEvents.push(Consts.E_SpawnMonster);
 	}
 	public handleEvent(eventName: string, data: any): void {
 		switch(eventName) {
+			case Consts.E_SpawnMonster:
+				let e = <SpawnMonsterArgs>data;
+				this.spawnMonster(e.monsterId);
+				break;
 		}
 	}
 	/**
@@ -42,7 +47,10 @@ class RoleView extends View{
 	 * 创建怪物
 	 */
 	private spawnMonster(monsterId: number) {
-
+		console.log('spawnMonster: ', monsterId);
+		let monster: Monster = Game.getInstance().objectPool.spawn(Monster, monsterId);
+		monster.load(this._map.path);
+		this.addChild(monster)
 	}
 	/**
 	 * 创建塔

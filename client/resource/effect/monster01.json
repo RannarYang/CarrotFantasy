@@ -1,0 +1,28 @@
+{"mc":{
+	"monster01":{
+		"frameRate":3,
+		"labels":[
+			{"name":"monster01","frame":1,"end":2}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"land_pink01",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"land_pink02",
+			"x":1,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"land_pink01":{"x":0,"y":0,"w":72,"h":71},
+		"land_pink02":{"x":0,"y":73,"w":55,"h":50}
+	}}

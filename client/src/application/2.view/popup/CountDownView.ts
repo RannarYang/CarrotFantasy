@@ -26,8 +26,8 @@ class CountDownView extends View{
 					.to({alpha: 0}, 300)
 					.call(()=>{
 						//倒计时结束
-						PopUpManager.getInstance().removePopUp(CountDownView);
 						this.sendEvent(Consts.E_CountDownComplete);
+						PopUpManager.getInstance().removePopUp(CountDownView);
 					})
 			})
 	}

@@ -12,12 +12,12 @@ class ObjectPool {
 	private _pools: { [key: string]: SubPool<any>; } = {};
 	public constructor() {
 	}
-	public spawn<T extends IReusable>(t: {new(): T}){
+	public spawn<T extends IReusable>(t: {new(): T}, data ?: any){
 		if(!this._pools[Utils.CommonUtil.getClassName(t)]) {
 			this.registNew<T>(t);
 		}
 		let pool : SubPool<T> = this._pools[Utils.CommonUtil.getClassName(t)];
-		return pool.spawn();
+		return pool.spawn(data);
 	}
 	public unSpawn(obj) {
 		for(var poolName in this._pools) {

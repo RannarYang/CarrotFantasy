@@ -1,0 +1,28 @@
+{"mc":{
+	"monster05":{
+		"frameRate":3,
+		"labels":[
+			{"name":"monster05","frame":1,"end":2}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"fat_green01",
+			"x":1,
+			"y":0
+			},
+			{
+			"res":"fat_green02",
+			"x":1,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"fat_green02":{"x":0,"y":89,"w":75,"h":74},
+		"fat_green01":{"x":0,"y":0,"w":65,"h":87}
+	}}
