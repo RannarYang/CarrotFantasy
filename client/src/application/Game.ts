@@ -63,6 +63,7 @@ class Game extends ApplicationBase {
 		
 		// 启动游戏
 		this.sendEvent(Consts.E_StartUp);
+		Log.debug('startup......');
 
 	}
 }

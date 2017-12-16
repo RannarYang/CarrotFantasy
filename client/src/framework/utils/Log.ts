@@ -1,15 +1,22 @@
 class Log {
-	public static error(...args) {
-		if(!SysConfig.SHOW_LOG) return false;
-		console.error.apply(null, args);
-	}
-	public static debug(...args) {
-		if(!SysConfig.SHOW_LOG) return false;
-		console.log.apply(null, args);
-	}
-	public static warning(...args) {
-		if(!SysConfig.SHOW_LOG) return false;
-		console.warn.apply(null, args);
-	}
+	public static debug: Function; 
+	public static warn: Function;
+	public static error: Function;
+}
+
+if(SysConfig.SHOW_LOG) {
+	/**
+	 * 调试时使用
+	 */
+	Log.debug = console.log.bind(console);
+	Log.warn = console.warn.bind(console);
+	Log.error = console.error.bind(console);
+} else {
+	/**
+	 * 上线发布时使用
+	 */
+	Log.debug = (...args) => {};
+	Log.warn = (...args) => {};
+	Log.error = (...args) => {};
 }
 

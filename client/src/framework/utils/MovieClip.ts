@@ -19,21 +19,21 @@ class MovieClip extends egret.MovieClip implements IReusable {
 		this.completeFuncThisObj = thisObj;
 		this.visible = false;
 		if(fileName=="") {
-			Log.warning('---特效文件名为空');
+			Log.warn('---特效文件名为空');
 			this.onComplete();
 			return;
 		}
 		let url = SysConfig.effectPath + fileName + '.json';
 		RES.getResByUrl(url, (data)=>{
 			if(!data) {
-				Log.warning('---加载特效JSON配置出错，', url);
+				Log.warn('---加载特效JSON配置出错，', url);
 				this.onComplete();
 				return;
 			}
 			url = "resource/effect/" + fileName + ".png";
 			RES.getResByUrl(url, (texture)=>{
 				if(!texture) {
-					Log.warning('---加载特效PNG文件出错,', url);
+					Log.warn('---加载特效PNG文件出错,', url);
 					this.onComplete();
 					return;
 				}
@@ -49,7 +49,7 @@ class MovieClip extends egret.MovieClip implements IReusable {
 				this.movieClipData = factory.generateMovieClipData(fileName);
 				if(!this.movieClipData.frames || this.movieClipData.frames.length == 0) {
 					// 无帧数据
-					Log.warning('---解析特效动画帧数据错误：', fileName);
+					Log.warn('---解析特效动画帧数据错误：', fileName);
 					this.onComplete();
 					return;
 				}
@@ -108,7 +108,7 @@ class MovieClip extends egret.MovieClip implements IReusable {
 	}
 	private onFrameLabel(evt:egret.MovieClipEvent):void
     {
-        Log.warning('onFrameLabel',this.currentFrame,evt.frameLabel);
+        Log.warn('onFrameLabel',this.currentFrame,evt.frameLabel);
         // AppCommon.event.dispatchEvent(new EffectEvent(EffectEvent.EFFECT_KEYFRAME,this.effectId,this.pvpFightData,false,false,evt.frameLabel));
     }
 }

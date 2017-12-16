@@ -1,6 +1,6 @@
 class StartUpCommand extends Controller{
 	public execute(data: any) {
-		console.log('开始游戏啦啦啦 =================');
+		Log.debug('开始游戏啦啦啦 =================');
 		// 注册模型
 		this.registModel(new GameModel());
 		this.registModel(new RoundModel());
